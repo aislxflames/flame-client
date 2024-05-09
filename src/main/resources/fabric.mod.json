@@ -1,0 +1,37 @@
+{
+	"schemaVersion": 1,
+	"id": "flame-client",
+	"version": "${version}",
+	"name": "Flame Client",
+	"description": "This is the flame client mod which adds optimization and many features in game!",
+	"authors": [
+		"aislxflames"
+	],
+	"contact": {
+		"homepage": "https://launcher.theflames.site",
+		"sources": "https://github.com/aislxflames/flame-client"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/flame-client/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.aislx.flameclient.FlameClient"
+		],
+		"fabric-datagen": [
+			"net.aislx.flameclient.FlameClientDataGenerator"
+		]
+	},
+	"mixins": [
+		"flame-client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.15.11",
+		"minecraft": "~1.20.1",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
